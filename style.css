@@ -31,7 +31,7 @@
   --size-border-radius: 4px;
 
   /* animation */
-  --animation-period: 300ms;
+  --animation-duration: 300ms;
 }
 
 button {
@@ -188,7 +188,7 @@ p {
 }
 
 .major__icon {
-  transition: all var(--animation-period) ease-in;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .major__icon:hover i {
@@ -318,7 +318,7 @@ p {
   top: -20px;
   left: 4px;
   opacity: 0;
-  transition: all var(--animation-period) ease-in;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects {
@@ -355,7 +355,7 @@ p {
   left: 0;
   opacity: 0;
   transform: translateY(10px);
-  transition: all var(--animation-period) ease-in;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .project__description h3 {
@@ -398,8 +398,6 @@ p {
   margin-left: 40px;
 }
 
-
-
 .testimonial__avatar {
   width: 150px;
   height: 150px;
@@ -418,4 +416,35 @@ p {
 
 .testimonial__speech-bubble a {
   color: var(--color-pink);
+}
+
+/* Contact */
+
+#contact {
+  background-color: var(--color-pink);
+}
+
+.contect__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contect__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
+
+.contact__rights {
+  margin-top: 12px;
 }

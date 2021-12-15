@@ -190,13 +190,13 @@
         <h1>My work</h1>
         <h3>projects</h3>
         <div class="work__categories">
-          <button class="category__btn active">
+          <button class="category__btn active" data-filter="*">
             All<span class="category__count">1</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="none">
             Vanilla JS<span class="category__count">0</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="react">
             React<span class="category__count">1</span>
           </button>
         </div>
@@ -205,6 +205,7 @@
             href="https://priceless-kowalevski-9f3eca.netlify.app/#/"
             class="project"
             target="blank"
+            data-type="react"
           >
             <img
               src="imgs/projects/nomflix.png"
@@ -216,49 +217,49 @@
               <span>React</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />
             <div class="project__description">
               <h3>None</h3>
               <span>none</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />
             <div class="project__description">
               <h3>None</h3>
               <span>none</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />.
             <div class="project__description">
               <h3>None</h3>
               <span>none</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />
             <div class="project__description">
               <h3>None</h3>
               <span>none</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />
             <div class="project__description">
               <h3>None</h3>
               <span>none</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />
             <div class="project__description">
               <h3>None</h3>
               <span>none</span>
             </div>
           </a>
-          <a class="project" href="#">
+          <a class="project" href="#" data-type="none">
             <img class="project__img" src="imgs/none.jpeg" alt="" />
             <div class="project__description">
               <h3>None</h3>
@@ -325,5 +326,9 @@
         <p class="contact__rights">2021 ssoo - All rights reserved</p>
       </div>
     </section>
+    <!-- Arrow up -->
+    <button class="arrow_up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </body>
 </html>

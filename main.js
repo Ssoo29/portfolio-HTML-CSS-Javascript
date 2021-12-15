@@ -1,24 +1,33 @@
-'use strick';
+"use strick";
 
 // Make navbar transparent whein it is on the top
-const navbar = document.querySelector('#navbar');
+const navbar = document.querySelector("#navbar");
 const navbarHeigth = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
-  if(window.scrollY > navbarHeigth) {
-    navbar.classList.add('navbar--dark');
+document.addEventListener("scroll", () => {
+  if (window.scrollY > navbarHeigth) {
+    navbar.classList.add("navbar--dark");
   } else {
-    navbar.classList.remove('navbar--dark');
+    navbar.classList.remove("navbar--dark");
   }
 });
 
 //Handle scrolling when tapping on the navbar menu
-const navbarMenu = document.querySelector('.navbar__menu');
-navbarMenu.addEventListener('click', (event) => {
+const navbarMenu = document.querySelector(".navbar__menu");
+navbarMenu.addEventListener("click", (event) => {
   const target = event.target;
   const link = target.dataset.link;
-  if(link == null) {
+  if (link == null) {
     return;
   }
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: 'smooth'});
+  this.scrollIntoView(link);
 });
+
+const homeContactBtn = document.querySelector(".home__contact");
+homeContactBtn.addEventListener("click", () => {
+  this.scrollIntoView('#contact');
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth"});
+};

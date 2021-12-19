@@ -19,7 +19,14 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   this.scrollIntoView(link);
+});
+
+//Navbar toggle button from small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 //Show "arrow up" button when scrolling down
